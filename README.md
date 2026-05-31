@@ -58,8 +58,22 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 
 ---
 
-## ⚙️ Justificación de la mejora aplicada y valor añadido (BORRADOR)
-La mejora incrementa la **ergonomía** y **flexibilidad** del sistema, permitiendo actuar sobre el ascensor desde el exterior y adaptarse a diferentes condiciones ambientales o necesidades de uso.
+## ⚙️ Justificación de la mejora aplicada y valor añadido
+
+Se ha elegido la variante de control remoto IR por tres motivos principales. En primer lugar, se trata de una tecnología ya integrada parcialmente en la Actividad 2, por lo que su incorporación avanzada requiere una adaptación progresiva del sistema y no un rediseño completo del montaje. 
+
+En segundo lugar, el uso del mando IR permite mejorar la ergonomía del sistema, ya que el usuario puede modificar parámetros sin interactuar físicamente con el circuito. Por último, esta solución se ajusta a la filosofía de instrumentación avanzada descrita en la actividad, donde se busca perfeccionar el sistema de medición, control, actuación y presentación mediante técnicas modernas de interacción. 
+
+Frente a otras alternativas, como la comunicación Bluetooth o la lógica fuzzy, el control remoto por infrarrojos presenta una implementación más directa en Wokwi y evita la necesidad de incorporar módulos adicionales. La lógica fuzzy se considera una opción interesante para una evolución futura, pero en esta actividad se ha priorizado una mejora funcional, estable y coherente con el sistema ya construido. El autodiagnóstico también podría aportar fiabilidad adicional, pero se ha decidido reservarlo como posible ampliación posterior, ya que el sistema ya incluye una lectura robusta del DHT22 mediante conservación de la última medida válida. 
+
+Por tanto, la variante seleccionada permite mejorar el sistema manteniendo una complejidad razonable, aprovechando componentes ya presentes y reforzando el carácter remoto e interactivo del ascensor inteligente. 
+
+
+La mejora mediante control remoto IR aporta una evolución clara respecto a la Actividad 2. En la versión anterior, el mando a distancia se utilizaba únicamente para seleccionar la planta de destino. En esta nueva fase, el mando se convierte en un elemento de supervisión y parametrización remota, permitiendo ajustar variables de control sin modificar físicamente el circuito. 
+
+Esta mejora incrementa la ergonomía del sistema, ya que permite actuar sobre el ascensor desde el exterior. También mejora la flexibilidad, puesto que los valores de consigna pueden adaptarse a diferentes condiciones ambientales o necesidades de uso. Además, mantiene la compatibilidad con el sistema existente, ya que no requiere sustituir sensores ni actuadores. 
+
+En resumen, la variante seleccionada permite perfeccionar el ascensor inteligente ACME mediante una funcionalidad sencilla, estable y directamente relacionada con la instrumentación avanzada: la modificación remota de parámetros de control. Esta solución mantiene la estructura de medición, control, actuación y visualización ya desarrollada, pero añade una capa adicional de interacción remota que mejora el valor funcional del sistema.
 
 ---
 
