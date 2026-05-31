@@ -21,10 +21,16 @@ La mejora permite ajustar variables de control sin modificar físicamente el cir
 El sistema mantiene compatibilidad con versiones anteriores y no requiere sustituir sensores ni actuadores.
 
 **Componentes principales:**
-- Microcontrolador: ESP32  
-- Sensor IR y receptor  
-- LCD para visualización de consignas  
-- Monitor serie para registro de cambios  
+- Microcontrolador Arduino Uno
+- Sensor IR y receptor
+- Fotorresistor LDR
+- Sensor digital de humedad y temperatura DHT22
+- Sensor de movimiento PIR
+- Servomotor
+- Monitor LCD 16x2 (IC2)
+- Botones táctiles 12mm
+- LEDs
+- Resistencias
 
 ---
 
