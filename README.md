@@ -39,11 +39,6 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 
 ---
 
-## 📸 Resultados
-![Simulación en Wokwi](ruta/a/imagen.png)
-
----
-
 ## ⚠️ Problemas encontrados
 - Dificultad con el control del stepper  
 - Ajuste de tiempos en el sensor  
@@ -71,5 +66,4 @@ La mejora incrementa la **ergonomía** y **flexibilidad** del sistema, permitien
 ---
 
 ## 📸 Capturas
-*(Agrega aquí imágenes del circuito o simulación en Wokwi)*  
 
