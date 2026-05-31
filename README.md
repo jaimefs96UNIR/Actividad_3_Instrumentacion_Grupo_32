@@ -60,7 +60,7 @@ La mejora incrementa la **ergonomía** y **flexibilidad** del sistema, permitien
 
 ## 👥 Autores
 **Grupo 32 – UNIR**  
-- María Fernández MAíso
+- María Fernández Maíso
 - Jaime Fernández Sánchez  
 - Laura Gállego Ortega
 - Pablo García López
