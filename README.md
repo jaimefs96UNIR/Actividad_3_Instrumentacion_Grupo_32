@@ -142,10 +142,24 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ---
 
-## ⚠️ Problemas encontrados (BORRADOR)
-- Dificultad con el control del stepper  
-- Ajuste de tiempos en el sensor  
-- Integración con el módulo X
+## ⚠️ Problemas encontrados
+Durante el desarrollo del proyecto se identificaron diversas incidencias técnicas que fue necesario resolver para garantizar el correcto funcionamiento del sistema.  
+
+**Interferencia con el pin D13:**  
+
+Durante las primeras pruebas se detectó una interferencia entre la librería IRremote y el pin D13 utilizado por uno de los pulsadores del ascensor. Esta situación provocaba activaciones no deseadas cuando se inicializaba el receptor con la opción de realimentación LED activada. Para solucionar el problema se modificó la configuración de inicialización del receptor IR, eliminando la opción ENABLE_LED_FEEDBACK.  
+
+**Identificación de códigos IR:**
+
+Fue necesario realizar varias pruebas utilizando el monitor serie para identificar correctamente los códigos enviados por cada tecla del mando. Una vez identificados, se asociaron a las distintas plantas del ascensor.  
+
+**Integración con el sistema existente:**
+
+Otro reto consistió en integrar el receptor infrarrojo sin generar conflictos con el resto de los sensores y actuadores. Finalmente, se consiguió mantener la conexión en el pin D2, garantizando con ello la compatibilidad del sistema completo. 
+
+**Interacción de los sistemas manuales y automáticos de iluminación y temperatura:** 
+
+Estas nuevas funcionalidades integradas no están completas. La relación entre activado y desactivado del modo manual, así como las interacciones con los botones del mando, requieren de otra vuelta de tuerca, con el objetivo de plantear todas las casuísticas posibles, y todos los posibles problemas que no se han cubierto en el desarrollo de esta actividad. Por ejemplo, si la iluminación es alta, no es posible que el usuario apague el led cuando desactiva el modo manual, ya que el automático lo deja encendido. También, debido a falta de botones, no es posible tener un estado de reposo del calentador/enfriador. Estos problemas servirán como base para futuras versiones del circuito. 
 
 ---
 
