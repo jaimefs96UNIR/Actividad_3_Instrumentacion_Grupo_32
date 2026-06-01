@@ -119,7 +119,7 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 ![Control de enfriador/calefactor](capturas/Encendido_manual_enfriado_control_remoto.png)
 
 ### Detección de objetos cerca del ascensor
-![Detección de objetos](capturas/Prueba_sensor_ultrasonico.png)
+![Detección de objetos](capturas/Prueba_sensor_ultrasonico.jfif)
 
 
 ---
