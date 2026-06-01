@@ -34,7 +34,7 @@ El sistema mantiene compatibilidad con versiones anteriores y no requiere sustit
 
 ---
 
-## 🛠️ Instalación (BORRADOR)
+## 🛠️ Integración de la mejora (BORRADOR)
 1. Clona el repositorio  
 2. Abre el proyecto en VSCode / Arduino IDE  
 3. Ejecuta en Wokwi o carga en la placa real
