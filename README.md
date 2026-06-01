@@ -83,6 +83,14 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ## 📸 Capturas (BORRADOR)
 
+- Ajuste manual de temperatura y humedad:
+- Ajuste manual de iluminación:
+- Introducción de llamadas de ascensor con mando:
+- Introducción de llamadas de ascensor con botones:
+- Activaciión de iluminación manual:
+- Activación de control de enfriador/calentador manual:
+
+
 ---
 
 ## ⚠️ Problemas encontrados (BORRADOR)
