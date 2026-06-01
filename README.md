@@ -20,16 +20,26 @@ Este proyecto corresponde a la Actividad 3 de la asignatura Equipos e Instrument
 La mejora permite ajustar variables de control sin modificar físicamente el circuito, convirtiendo el mando IR en un elemento de supervisión y parametrización remota. El sistema mantiene compatibilidad con versiones anteriores y no requiere sustituir sensores ni actuadores.
 
 **Componentes principales:**
-- *Microcontrolador Arduino Uno*: Encargado del procesamiento y control general.
-- *Receptor IR*: Recibe las órdenes remotas enviadas por el mando infrarrojo para la selección de plantas y la modificación de parámetros de funcionamiento. 
-- *Fotorresistor LDR*: Conectado a una entrada analógica del Arduino, permite determinar el nivel de iluminación existente en el entorno. 
-- *Sensor digital de humedad y temperatura DHT22*: Conectado al pin digital D3, proporciona las medidas de temperatura y humedad utilizadas por el sistema de control ambiental.  
-- *Sensor de movimiento PIR*: Permite detectar la presencia de personas en las proximidades del ascensor, activando determinadas funciones de iluminación y operación.  
-- *Servomotor*: Conectado al pin PWM correspondiente, simula el desplazamiento del ascensor entre las diferentes plantas.  
-- *Monitor LCD 16x2 (IC2)*: Conectada mediante el bus I2C (SDA y SCL), muestra información relativa a la planta actual, temperatura, humedad y mensajes generados por el sistema.  
-- *Pulsadores táctiles 12mm*: Los pulsadores permiten seleccionar manualmente la planta de destino cuando no se utiliza el mando a distancia.  
-- *LED RGB*: Indica visualmente el estado ambiental mediante distintos colores asociados a las condiciones de funcionamiento.
-- *LED de iluminación*: Representa el sistema de iluminación controlado automáticamente según las condiciones detectadas por los sensores. 
+
+- **Microcontrolador Arduino Uno**: Encargado del procesamiento y control general.
+  
+- **Receptor IR**: Recibe las órdenes remotas enviadas por el mando infrarrojo para la selección de plantas y la modificación de parámetros de funcionamiento.
+  
+- **Fotorresistor LDR**: Conectado a una entrada analógica del Arduino, permite determinar el nivel de iluminación existente en el entorno.
+  
+- **Sensor digital de humedad y temperatura DHT22**: Conectado al pin digital D3, proporciona las medidas de temperatura y humedad utilizadas por el sistema de control ambiental.
+  
+- **Sensor de movimiento PIR**: Permite detectar la presencia de personas en las proximidades del ascensor, activando determinadas funciones de iluminación y operación.
+  
+- **Servomotor**: Conectado al pin PWM correspondiente, simula el desplazamiento del ascensor entre las diferentes plantas.
+  
+- **Monitor LCD 16x2 (IC2)**: Conectada mediante el bus I2C (SDA y SCL), muestra información relativa a la planta actual, temperatura, humedad y mensajes generados por el sistema.
+  
+- **Pulsadores táctiles 12mm**: Los pulsadores permiten seleccionar manualmente la planta de destino cuando no se utiliza el mando a distancia.
+  
+- **LED RGB**: Indica visualmente el estado ambiental mediante distintos colores asociados a las condiciones de funcionamiento.
+  
+- **LED de iluminación**: Representa el sistema de iluminación controlado automáticamente según las condiciones detectadas por los sensores. 
 
 ---
 
@@ -72,31 +82,32 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 ## 🧪 Pruebas realizadas (BORRADOR)
 A continuación, se detallan algunas de las pruebas realizadas una vez implementadas las nuevas funcionalidades. En la sección de capturas pueden observarse los resultados de dichas pruebas. En total, se han realizado las siguientes pruebas:
 
-- *Ajuste manual de temperatura y humedad*: se ajusta manualmente la temperatura y humedad en el sensor DHT22. Al hacerlo, se comprueba que el LED de enfriado/calentado/reposo cambia de color. Además, gracias al log del serial, es posible ver que las actualizaciones se realizan de manera correcta.
+- **Ajuste manual de temperatura y humedad**: se ajusta manualmente la temperatura y humedad en el sensor DHT22. Al hacerlo, se comprueba que el LED de enfriado/calentado/reposo cambia de color. Además, gracias al log del serial, es posible ver que las actualizaciones se realizan de manera correcta.
   
-- *Ajuste manual de iluminación*: se ajusta manualmente la iluminación en el fotoresistor LDR. Se comprueba que aumenta o disminuye su intensidad, llegando incluso a apagarse, cuando se realizan variaciones en la temeratura.
+- **Ajuste manual de iluminación**: se ajusta manualmente la iluminación en el fotoresistor LDR. Se comprueba que aumenta o disminuye su intensidad, llegando incluso a apagarse, cuando se realizan variaciones en la temeratura.
 
-- *Introducción de llamadas de ascensor con mando*: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+- **Introducción de llamadas de ascensor con mando**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
   
-- *Introducción de llamadas de ascensor con botones*: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+- **Introducción de llamadas de ascensor con botones**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
   
-- *Activaciión de iluminación manual*: al activar la iluminación manual, es posible ajustar la intensidad de la luz, incluso apagar el led, desde el mando, independientemente de la iluminación exterior, pero con limitaciones. Si se desactiva el modo manual estando la iluminación baja, no se aprecia la diferencia ni el paso de un modo a otro, ya que el led se queda activado.
+- **Activaciión de iluminación manual**: al activar la iluminación manual, es posible ajustar la intensidad de la luz, incluso apagar el led, desde el mando, independientemente de la iluminación exterior, pero con limitaciones. Si se desactiva el modo manual estando la iluminación baja, no se aprecia la diferencia ni el paso de un modo a otro, ya que el led se queda activado.
   
-- *Activación de control de enfriador/calentador manual*: al activar el modo manual, es posible calentar/enfriar independientemente de la tempertura externa, accionando los botones correspondientes. Con limitaciones eso si, es necesario ajustar los botones para incluir funcionalidades, ya que sólo quedaban tres botones numñericos disponibles para cuatro estados. No era posible tener un estado de apagado y otro de reposo.
+- **Activación de control de enfriador/calentador manual**: al activar el modo manual, es posible calentar/enfriar independientemente de la tempertura externa, accionando los botones correspondientes. Con limitaciones eso si, es necesario ajustar los botones para incluir funcionalidades, ya que sólo quedaban tres botones numñericos disponibles para cuatro estados. No era posible tener un estado de apagado y otro de reposo.
 
-- *Detección de objetos cerca del ascensor*: se comprueba que, ajustando manualmente el sensor de detección, el ascensor queda bloqueado si se detecta un objeto ficticio a 20cm o menos.
+- **Detección de objetos cerca del ascensor**: se comprueba que, ajustando manualmente el sensor de detección, el ascensor queda bloqueado si se detecta un objeto ficticio a 20cm o menos.
 
 ---
 
 ## 📸 Capturas (BORRADOR)
 
-- *Ajuste manual de temperatura y humedad*: 
+- **Ajuste manual de temperatura y humedad**: 
   
-- Ajuste manual de iluminación:
-- Introducción de llamadas de ascensor con mando:
-- Introducción de llamadas de ascensor con botones:
-- Activaciión de iluminación manual:
-- Activación de control de enfriador/calentador manual:
+- **Ajuste manual de iluminación**:
+- **Introducción de llamadas de ascensor con mando**:
+- **Introducción de llamadas de ascensor con botones**:
+- **Activación de iluminación manual**:
+- **Activación de control de enfriador/calentador manual**:
+- **Detección de objetos cerca del ascensor**:
 
 
 ---
