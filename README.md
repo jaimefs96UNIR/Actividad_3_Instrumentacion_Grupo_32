@@ -72,18 +72,26 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 ## 🧪 Pruebas realizadas (BORRADOR)
 A continuación, se detallan algunas de las pruebas realizadas una vez implementadas las nuevas funcionalidades. En la sección de capturas pueden observarse los resultados de dichas pruebas. En total, se han realizado las siguientes pruebas:
 
-- Ajuste manual de temperatura y humedad:
-- Ajuste manual de iluminación:
-- Introducción de llamadas de ascensor con mando:
-- Introducción de llamadas de ascensor con botones:
-- Activaciión de iluminación manual:
-- Activación de control de enfriador/calentador manual:
+- *Ajuste manual de temperatura y humedad*: se ajusta manualmente la temperatura y humedad en el sensor DHT22. Al hacerlo, se comprueba que el LED de enfriado/calentado/reposo cambia de color. Además, gracias al log del serial, es posible ver que las actualizaciones se realizan de manera correcta.
+  
+- *Ajuste manual de iluminación*: se ajusta manualmente la iluminación en el fotoresistor LDR. Se comprueba que aumenta o disminuye su intensidad, llegando incluso a apagarse, cuando se realizan variaciones en la temeratura.
+
+- *Introducción de llamadas de ascensor con mando*: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+  
+- *Introducción de llamadas de ascensor con botones*: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+  
+- *Activaciión de iluminación manual*: al activar la iluminación manual, es posible ajustar la intensidad de la luz, incluso apagar el led, desde el mando, independientemente de la iluminación exterior, pero con limitaciones. Si se desactiva el modo manual estando la iluminación baja, no se aprecia la diferencia ni el paso de un modo a otro, ya que el led se queda activado.
+  
+- *Activación de control de enfriador/calentador manual*: al activar el modo manual, es posible calentar/enfriar independientemente de la tempertura externa, accionando los botones correspondientes. Con limitaciones eso si, es necesario ajustar los botones para incluir funcionalidades, ya que sólo quedaban tres botones numñericos disponibles para cuatro estados. No era posible tener un estado de apagado y otro de reposo.
+
+- *Detección de objetos cerca del ascensor*: se comprueba que, ajustando manualmente el sensor de detección, el ascensor queda bloqueado si se detecta un objeto ficticio a 20cm o menos.
 
 ---
 
 ## 📸 Capturas (BORRADOR)
 
-- Ajuste manual de temperatura y humedad:
+- *Ajuste manual de temperatura y humedad*: 
+  
 - Ajuste manual de iluminación:
 - Introducción de llamadas de ascensor con mando:
 - Introducción de llamadas de ascensor con botones:
@@ -112,7 +120,7 @@ Puedes acceder a la simulación completa del proyecto en el siguiente enlace:
 
 👉 Fase inicial: 
 
-👉 Fase final: https://wokwi.com/projects/465655498937265153
+👉 Fase final: https://wokwi.com/projects/465656832774518785
 
 ---
 
