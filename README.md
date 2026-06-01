@@ -70,9 +70,14 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 ---
 
 ## 🧪 Pruebas realizadas (BORRADOR)
-- Modificación de temperatura de referencia: `Nuevo Tset: 26°C`  
-- Ajuste de consigna de iluminación: `Nuevo Lset: 75%`  
-- Verificación de recepción y aplicación de órdenes en el monitor serie.
+A continuación, se detallan algunas de las pruebas realizadas una vez implementadas las nuevas funcionalidades. En la sección de capturas pueden observarse los resultados de dichas pruebas. En total, se han realizado las siguientes pruebas:
+
+- Ajuste manual de temperatura y humedad:
+- Ajuste manual de iluminación:
+- Introducción de llamadas de ascensor con mando:
+- Introducción de llamadas de ascensor con botones:
+- Activaciión de iluminación manual:
+- Activación de control de enfriador/calentador manual:
 
 ---
 
