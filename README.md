@@ -112,7 +112,7 @@ Puedes acceder a la simulación completa del proyecto en el siguiente enlace:
 
 👉 Fase inicial: 
 
-👉 Fase final:
+👉 Fase final: https://wokwi.com/projects/465655498937265153
 
 ---
 
