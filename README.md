@@ -1,5 +1,5 @@
 # 🧠 Actividad 3 – Equipos e Instrumentación Electrónica  
-(BORRADOR)Proyecto grupal de la UNIR (Grupo 32). Implementación, simulación y documentación del sistema de control remoto IR para el ascensor inteligente ACME.
+Repositorio del Proyecto del Grupo 32 de Equipamiento e Instrumentación Electrónica del Máster en Telecomunicaciones de UNIR. Implementación, simulación y documentación del sistema de control remoto IR para el ascensor inteligente ACME.
 
 ---
 
