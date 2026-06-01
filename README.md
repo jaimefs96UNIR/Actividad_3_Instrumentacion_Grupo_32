@@ -100,7 +100,7 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ## 📸 Capturas (BORRADOR)
 
-![Texto alternativo](Encendido_manual_calentado_control_remoto.png)
+![Texto alternativo](capturas/Encendido_manual_calentado_control_remoto.png)
 
 - **Ajuste manual de temperatura y humedad**:
 - **Ajuste manual de iluminación**:
