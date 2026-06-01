@@ -136,10 +136,28 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ---
 
-## 🚀 Mejoras futuras (BORRADOR)
-- Integración de control PID para mayor precisión.  
-- Implementación de interfaz gráfica para supervisión remota.  
-- Optimización del código para reducir latencia en la comunicación IR.
+## 🚀 Mejoras futuras
+
+Tras la exitosa integración del control remoto por infrarrojos (IR) y la seguridad por ultrasonidos en el ascensor industrial ACME, se detectan limitaciones intrínsecas a la tecnología utilizada Como evolución natural del proyecto, se propone una mejora futura dividida en tres ejes estratégicos: 
+
+**Conectividad IoT y Supervisión Web**
+
+*Objetivo*: Eliminar la limitación física del mando IR y permitir la monitorización a distancia desde cualquier punto de la planta industrial. 
+*Implementación*: Se propone sustituir o complementar el Arduino UNO por un microcontrolador con conectividad inalámbrica integrada, como el ESP32. Esto permitirá desplegar un servidor web local o conectarse a una plataforma IoT. 
+*Impacto*: Las consignas de temperatura y luminosidad que ahora se ajustan con el mando IR podrán modificarse a través de un panel de control (dashboard) accesible desde un ordenador o smartphone. Además, las lecturas del DHT22, LDR y el estado de seguridad del sensor ultrasónico se graficarán en tiempo real, permitiendo un registro histórico de fallos u obstáculos. 
+
+**Implementación de un Sistema de Autodiagnóstico Avanzado**  
+
+*Objetivo*: Elevar el sistema al estándar industrial mediante la detección temprana de anomalías en los sensores y actuadores. 
+*Implementación*: Aprovechando que el código ya realiza un filtrado del DHT22, se propone programar algoritmos de validación de datos cruzados y tiempos de respuesta: 
+*Para el Servomotor*: Monitorizar el tiempo teórico que tarda en desplazarse entre plantas. Si el sensor ultrasónico o de presencia no detecta cambios en un tiempo límite, el sistema disparará una alarma de "Fallo en Actuador/Motor bloqueado". 
+*Para los Sensores (LDR/DHT22)*: Implementar algoritmos de detección de "congelación" de señal (medidas idénticas durante periodos anormalmente largos) o la detección de gradientes imposibles (por ejemplo, una subida de 10 °C en un segundo), aislando el sensor defectuoso y entrando en un "Modo de Emergencia" seguro. 
+
+**Transición a Control Inteligente**
+
+*Objetivo*: Suavizar el comportamiento del sistema térmico y de iluminación, reduciendo el desgaste mecánico y el consumo energético. 
+*Implementación*: Sustituir el control ON-OFF con zona muerta actual de la temperatura por un controlador de Lógica Difusa (Fuzzy Logic) implementado por software. 
+*Impacto*: En lugar de encender y apagar bruscamente los actuadores ambientales, el sistema regulará de forma gradual (mediante variables lingüísticas como
 
 ---
 
