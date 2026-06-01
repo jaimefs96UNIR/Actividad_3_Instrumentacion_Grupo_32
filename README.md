@@ -57,6 +57,10 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 
 ---
 
+## 📸 Capturas (BORRADOR)
+
+---
+
 ## ⚠️ Problemas encontrados (BORRADOR)
 - Dificultad con el control del stepper  
 - Ajuste de tiempos en el sensor  
@@ -97,7 +101,5 @@ En resumen, la variante seleccionada permite perfeccionar el ascensor inteligent
 - Laura Gállego Ortega
 - Pablo García López
 - Alfredo García Martín
----
 
-## 📸 Capturas (BORRADOR)
 
