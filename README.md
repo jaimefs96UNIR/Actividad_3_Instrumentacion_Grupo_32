@@ -34,11 +34,18 @@ El sistema mantiene compatibilidad con versiones anteriores y no requiere sustit
 
 ---
 
-## 🛠️ Integración de la mejora (BORRADOR)
-1. Clona el repositorio  
-2. Abre el proyecto en VSCode / Arduino IDE  
-3. Ejecuta en Wokwi o carga en la placa real
+## 🛠️ Integración de la mejora
+La incorporación del receptor infrarrojo se ha realizado sin modificar la arquitectura principal del sistema. El nuevo dispositivo se conecta al pin digital D2 del Arduino y permite recibir órdenes procedentes del mando a distancia. De esta forma, el usuario dispone de una segunda vía de interacción además de los pulsadores físicos ya existentes. 
 
+La integración se ha llevado a cabo garantizando la compatibilidad con todas las funciones desarrolladas anteriormente. Los pulsadores continúan permitiendo la selección manual de plantas, mientras que el mando IR añade la posibilidad de realizar las mismas acciones de forma remota. Además, se incorporan nuevas funciones relacionadas con la modificación de parámetros de funcionamiento, como los valores de referencia utilizados por los sistemas de control ambiental. 
+
+El algoritmo de control de temperatura mantiene su estructura ON-OFF con zona muerta, mientras que el sistema de iluminación continúa utilizando la información proporcionada por el sensor LDR para adaptar el funcionamiento del alumbrado. La mejora implementada permite modificar las consignas de funcionamiento sin necesidad de acceder físicamente al circuito ni alterar el código fuente. 
+
+La pantalla LCD sigue desempeñando la función de interfaz hombre-máquina local, mostrando la planta seleccionada, las variables ambientales y los cambios realizados mediante el mando a distancia. Del mismo modo, el monitor serie registra los eventos generados por el sistema, facilitando la supervisión y la verificación del funcionamiento. 
+
+Gracias a esta integración se obtiene un sistema más flexible y cómodo de utilizar, manteniendo la estructura original del ascensor inteligente ACME e incorporando capacidades adicionales de interacción remota que mejoran las prestaciones globales de la instalación. 
+
+---
 ## ▶️ Ejecución (BORRADOR)
 Explica cómo iniciar el sistema, qué se debe ver, etc.
 
