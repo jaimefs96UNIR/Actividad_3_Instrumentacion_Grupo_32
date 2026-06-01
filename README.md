@@ -79,7 +79,7 @@ Explica cómo iniciar el sistema, qué se debe ver, etc.
 
 ---
 
-## 🧪 Pruebas realizadas (BORRADOR)
+## 🧪 Pruebas realizadas
 A continuación, se detallan algunas de las pruebas realizadas una vez implementadas las nuevas funcionalidades. En la sección de capturas pueden observarse los resultados de dichas pruebas. En total, se han realizado las siguientes pruebas:
 
 - **Ajuste manual de temperatura y humedad**: se ajusta manualmente la temperatura y humedad en el sensor DHT22. Al hacerlo, se comprueba que el LED de enfriado/calentado/reposo cambia de color. Además, gracias al log del serial, es posible ver que las actualizaciones se realizan de manera correcta.
@@ -98,7 +98,7 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ---
 
-## 📸 Capturas (BORRADOR)
+## 📸 Capturas
 
 ### Ajuste manual de temperatura y humedad
 ![Ajuste manual de temperatura y humedad](capturas/Prueba_ajuste_sensor_humedad_y_temperatura_I.png)
@@ -138,10 +138,15 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ---
 
+## 📊 Conclusiones
+
+
+---
+
+
+
 ## 🔗 Enlace a la simulación en Wokwi
 Puedes acceder a la simulación completa del proyecto en el siguiente enlace:
-
-👉 Fase inicial: 
 
 👉 Fase final: https://wokwi.com/projects/465656832774518785
 
