@@ -159,7 +159,7 @@ A continuación, se presenta un balance técnico de las ventajas operativas intr
 
 **Trazabilidad de Eventos mediante Visualización Dual**: La integración del código permite que cualquier orden remota sea procesada e informada simultáneamente de forma local (temporalmente en el LCD) y remota (a través del monitor serie). Esto garantiza que los cambios de parámetros queden registrados de manera robusta para futuras labores de auditoría técnica o mantenimiento predictivo. 
 
-**Desventajas y limitaciones **
+**Desventajas y limitaciones**
 **Vulnerabilidad de la Tecnología Infrarroja (Línea de Visión)**: A nivel industrial, la comunicación IR presenta limitaciones físicas severas. Requiere una línea de visión directa y despejada entre el mando emisor y el receptor. En una planta de producción real, la presencia de maquinaria voluminosa, polvo en suspensión, vibraciones o interferencias por radiación lumínica ambiental externa podría bloquear o corromper las señales transmitidas, restando fiabilidad frente a estándares como Bluetooth o Radiofrecuencia. 
 
 **Capacidad de Procesamiento Monohilo (Ausencia de Concurrencia)**: El microcontrolador Arduino UNO ejecuta el código de forma puramente secuencial (un solo hilo de ejecución). Si el sistema se encuentra retenido en microsegundos críticos actualizando las lecturas del sensor DHT22 o escribiendo texto en la pantalla LCD, existe el riesgo de pérdida de pulsos IR si el usuario presiona el mando de manera asíncrona, lo que obliga a repetir la pulsación. 
