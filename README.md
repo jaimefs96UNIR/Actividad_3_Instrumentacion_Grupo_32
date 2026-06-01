@@ -86,9 +86,9 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
   
 - **Ajuste manual de iluminación**: se ajusta manualmente la iluminación en el fotoresistor LDR. Se comprueba que aumenta o disminuye su intensidad, llegando incluso a apagarse, cuando se realizan variaciones en la temeratura.
 
-- **Introducción de llamadas de ascensor con mando**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+- **Introducción de llamadas de ascensor con mando**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores. Se observa, además, el movimiento correcto del servomotor.
   
-- **Introducción de llamadas de ascensor con botones**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores.
+- **Introducción de llamadas de ascensor con botones**: se observa que el sistema responde correctamente a las llamadas realizadas desde los pulsadores. Se observa, además, el movimiento correcto del servomotor.
   
 - **Activaciión de iluminación manual**: al activar la iluminación manual, es posible ajustar la intensidad de la luz, incluso apagar el led, desde el mando, independientemente de la iluminación exterior, pero con limitaciones. Si se desactiva el modo manual estando la iluminación baja, no se aprecia la diferencia ni el paso de un modo a otro, ya que el led se queda activado.
   
