@@ -100,7 +100,7 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ## 📸 Capturas (BORRADOR)
 
-- ![Ajuste manual de temperatura y humedad]: (capturas/Encendido_manual_calentado_control_remoto.png)
+![Ajuste manual de temperatura y humedad]:(capturas/Encendido_manual_calentado_control_remoto.png)
 
 - **Ajuste manual de iluminación**:
 - **Introducción de llamadas de ascensor con mando**:
