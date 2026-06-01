@@ -94,6 +94,13 @@ En resumen, la variante seleccionada permite perfeccionar el ascensor inteligent
 
 ---
 
+## 🔗 Enlace a la simulación en Wokwi (BORRADOR)
+Puedes acceder a la simulación completa del proyecto en el siguiente enlace:
+
+👉 https://wokwi.com/projects/XXXXXXXX
+
+---
+
 ## 👥 Autores
 **Grupo 32 – UNIR**  
 - María Fernández Maíso
