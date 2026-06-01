@@ -79,7 +79,7 @@ La pantalla LCD sigue desempeñando la función de interfaz hombre-máquina loca
 Gracias a esta integración se obtiene un sistema más completo, flexible y seguro, manteniendo la estructura original del ascensor inteligente ACME e incorporando capacidades adicionales de interacción remota y protección frente a obstáculos, mejorando así las prestaciones globales de la instalación. 
 
 ---
-## ▶️ Ejecución (BORRADOR)
+## ▶️ Ejecución
 
 El ascensor dispone de cinco plantas, numeradas de 0 a 4. Cada planta se asocia a una posición angular del servomotor: planta 0 a 0°, planta 1 a 45°, planta 2 a 90°, planta 3 a 135° y planta 4 a 180°.
 
