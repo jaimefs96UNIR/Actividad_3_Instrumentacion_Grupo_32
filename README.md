@@ -21,16 +21,16 @@ La mejora permite ajustar variables de control sin modificar físicamente el cir
 El sistema mantiene compatibilidad con versiones anteriores y no requiere sustituir sensores ni actuadores.
 
 **Componentes principales:**
-- Microcontrolador Arduino Uno
-- Sensor IR y receptor
-- Fotorresistor LDR
-- Sensor digital de humedad y temperatura DHT22
-- Sensor de movimiento PIR
-- Servomotor
-- Monitor LCD 16x2 (IC2)
-- Botones táctiles 12mm
-- LEDs
-- Resistencias
+- *Microcontrolador Arduino Uno*: Encargado del procesamiento y control general.
+- *Receptor IR*: Recibe las órdenes remotas enviadas por el mando infrarrojo para la selección de plantas y la modificación de parámetros de funcionamiento. 
+- *Fotorresistor LDR*: Conectado a una entrada analógica del Arduino, permite determinar el nivel de iluminación existente en el entorno. 
+- *Sensor digital de humedad y temperatura DHT22*: Conectado al pin digital D3, proporciona las medidas de temperatura y humedad utilizadas por el sistema de control ambiental.  
+- *Sensor de movimiento PIR*: Permite detectar la presencia de personas en las proximidades del ascensor, activando determinadas funciones de iluminación y operación.  
+- *Servomotor*: Conectado al pin PWM correspondiente, simula el desplazamiento del ascensor entre las diferentes plantas.  
+- *Monitor LCD 16x2 (IC2)*: Conectada mediante el bus I2C (SDA y SCL), muestra información relativa a la planta actual, temperatura, humedad y mensajes generados por el sistema.  
+- *Pulsadores táctiles 12mm*: Los pulsadores permiten seleccionar manualmente la planta de destino cuando no se utiliza el mando a distancia.  
+- *LED RGB*: Indica visualmente el estado ambiental mediante distintos colores asociados a las condiciones de funcionamiento.
+- *LED de iluminación*: Representa el sistema de iluminación controlado automáticamente según las condiciones detectadas por los sensores. 
 
 ---
 
