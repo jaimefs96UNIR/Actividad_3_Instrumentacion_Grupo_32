@@ -100,15 +100,26 @@ A continuación, se detallan algunas de las pruebas realizadas una vez implement
 
 ## 📸 Capturas (BORRADOR)
 
-![Texto alternativo](capturas/Encendido_manual_calentado_control_remoto.png)
+### Ajuste manual de temperatura y humedad
+![Ajuste manual de temperatura y humedad](capturas/Prueba_ajuste_sensor_humedad_y_temperatura_I.png)
 
-- **Ajuste manual de temperatura y humedad**:
-- **Ajuste manual de iluminación**:
-- **Introducción de llamadas de ascensor con mando**:
-- **Introducción de llamadas de ascensor con botones**:
-- **Activación de iluminación manual**:
-- **Activación de control de enfriador/calentador manual**:
-- **Detección de objetos cerca del ascensor**:
+### Ajuste manual de iluminación
+![Ajuste manual de iluminación](capturas/Prueba_ajuste_manual_sensor_iluminacion.png)
+
+### Introducción de llamadas de ascensor con mando
+![Llamadas con mando](capturas/Prueba_mando_llamada_ascensor.png)
+
+### Introducción de llamadas de ascensor con botones
+![Llamadas con botones](capturas/Prueba_pulsador_llamada_ascensor.png)
+
+### Activación de iluminación manual
+![Iluminación manual](capturas/Encendido_manual_led_iluminacion_con_mando.png)
+
+### Activación de control de enfriador/calefactor manual
+![Control de enfriador/calefactor](capturas/Encendido_manual_enfriado_control_remoto.png)
+
+### Detección de objetos cerca del ascensor
+![Detección de objetos](capturas/Prueba_sensor_ultrasonico.png)
 
 
 ---
