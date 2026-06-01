@@ -80,7 +80,20 @@ Gracias a esta integración se obtiene un sistema más completo, flexible y segu
 
 ---
 ## ▶️ Ejecución (BORRADOR)
-Explica cómo iniciar el sistema, qué se debe ver, etc.
+
+El ascensor dispone de cinco plantas, numeradas de 0 a 4. Cada planta se asocia a una posición angular del servomotor: planta 0 a 0°, planta 1 a 45°, planta 2 a 90°, planta 3 a 135° y planta 4 a 180°.
+
+Las llamadas pueden realizarse mediante pulsadores físicos o mediante el mando IR. Las teclas 0, 1, 2, 3 y 4 del mando envían el ascensor a las plantas correspondientes.
+
+El sensor PIR detecta si existe presencia en la cabina. El sensor DHT22 mide temperatura y humedad, mientras que el LDR mide el nivel de iluminación ambiental.
+
+El sistema aplica un control ON-OFF con zona muerta para la temperatura. La consigna se fija en 25 °C con una zona muerta de ±2 °C. Si la temperatura es baja, se activa la acción de calentamiento y el RGB se muestra en rojo. Si la temperatura está dentro del rango aceptable, el sistema permanece en reposo y el RGB se muestra en verde. Si la temperatura es alta, se activa la acción de enfriamiento y el RGB se muestra en azul.
+
+La iluminación artificial se controla mediante PWM. Cuando la luz ambiental baja por debajo del umbral, el LED de iluminación aumenta su intensidad.
+
+Además de las anteriores funcionalidades, es posible controlar con el mando tanto la iluminación de la cabina como la activación del calentamiento o enfriamiento. Para la iluminación, bastaría con pulsar el botón 5 para encender, y volver a pulsar si queremos aumentar/disminuir la intensidad, y el boton 6 para apagarlo. Respecto a la temperatura, es posible calentar, enfriar, o desactivar el control manual de acción de temperatura pulsando los botones 7, 8 y 9 respectivamente.
+
+Por último, destacar que se ha añadido un sensor ultrasónico con el objetivo de que, a una distancia de 20cm, el ascensorpermanezca bloqueado ante la detección de un objeto próximo.
 
 ---
 
