@@ -16,7 +16,7 @@ Este proyecto corresponde a la Actividad 3 de la asignatura Equipos e Instrument
 
 ---
 
-## 🧩 Descripción técnica (BORRADOR)
+## 🧩 Descripción técnica
 La mejora permite ajustar variables de control sin modificar físicamente el circuito, convirtiendo el mando IR en un elemento de supervisión y parametrización remota.  
 El sistema mantiene compatibilidad con versiones anteriores y no requiere sustituir sensores ni actuadores.
 
