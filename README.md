@@ -33,8 +33,6 @@ La mejora permite ajustar variables de control sin modificar físicamente el cir
 
 ---
 
----
-
 ## ⚙️ Justificación de la mejora aplicada y valor añadido
 
 Se ha elegido la variante de control remoto IR por tres motivos principales. En primer lugar, se trata de una tecnología ya integrada parcialmente en la Actividad 2, por lo que su incorporación avanzada requiere una adaptación progresiva del sistema y no un rediseño completo del montaje. 
